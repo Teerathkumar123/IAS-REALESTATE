@@ -88,22 +88,22 @@ export const WorkingLocations: React.FC = () => {
   const whatsappUrl = "https://wa.me/918667841110?text=Hello%20IAS%20Real%20Estate%20%26%20Builders%2C%20I%20am%20interested%20in%20properties%20in%20your%20working%20locations.";
 
   return (
-    <section id="locations" className="relative w-full min-h-screen flex flex-col justify-center py-24 md:py-36 bg-[#080C15] text-foreground border-t border-[#00F0FF]/15 overflow-hidden px-6 sm:px-12 md:px-20 lg:px-28">
+    <section id="locations" className="relative w-full min-h-screen flex flex-col justify-center py-20 sm:py-28 md:py-36 bg-[#080C15] text-foreground border-t border-[#00F0FF]/15 overflow-hidden px-4 sm:px-8 md:px-16 lg:px-24">
       {/* Soft Electric Cyan Glow Spotlights */}
       <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#00F0FF]/5 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-[450px] h-[450px] bg-[#6366F1]/5 rounded-full blur-3xl pointer-events-none" />
 
       <div className="w-full relative z-10">
         {/* Section Editorial Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-8">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6 md:gap-8">
           <div>
-            <div className="flex items-center space-x-3 mb-4">
-              <span className="text-xs sm:text-sm font-mono tracking-[0.35em] text-[#00F0FF] uppercase font-bold">
+            <div className="flex items-center space-x-2.5 sm:space-x-3 mb-3 sm:mb-4">
+              <span className="text-[10px] sm:text-xs md:text-sm font-mono tracking-[0.2em] sm:tracking-[0.35em] text-[#00F0FF] uppercase font-bold">
                 {t("locations.tag")}
               </span>
-              <span className="h-[1px] w-12 sm:w-16 bg-[#00F0FF]/30" />
+              <span className="h-[1px] w-8 sm:w-16 bg-[#00F0FF]/30" />
             </div>
-            <h2 className="font-serif text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight text-foreground uppercase leading-[1.02]">
+            <h2 className="font-serif text-2xl xs:text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-normal tracking-tight text-foreground uppercase leading-tight sm:leading-[1.02]">
               {t("locations.titleMain")}<br />
               <span className="gradient-text-cyan italic font-normal">{t("locations.titleCyan")}</span>
             </h2>
@@ -114,21 +114,21 @@ export const WorkingLocations: React.FC = () => {
         </div>
 
         {/* 2-Column Grid: Interactive Regional Node Network Map + Hub Selector */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
           {/* Left Column: Interactive Vector Map Graph */}
           <div className="lg:col-span-6 relative">
             <BeveledCard variant="glass">
-              <div className="relative w-full h-[420px] sm:h-[480px] bg-gradient-to-b from-[#0D1424] to-[#080C15] rounded-xl border border-[#00F0FF]/30 p-6 flex flex-col justify-between overflow-hidden shadow-cyan-glow">
+              <div className="relative w-full h-[340px] sm:h-[450px] bg-gradient-to-b from-[#0D1424] to-[#080C15] rounded-xl border border-[#00F0FF]/30 p-4 sm:p-6 flex flex-col justify-between overflow-hidden shadow-cyan-glow">
                 {/* Top Vector Grid Header */}
-                <div className="flex items-center justify-between z-10">
-                  <div className="flex items-center space-x-2">
-                    <Compass className="w-4 h-4 text-[#00F0FF] animate-spin-slow" />
-                    <span className="text-[10px] font-mono tracking-[0.3em] text-[#00F0FF] uppercase font-bold">
-                      TAMIL NADU & KARNATAKA NETWORK
+                <div className="flex items-center justify-between z-10 gap-2">
+                  <div className="flex items-center space-x-1.5 sm:space-x-2 min-w-0">
+                    <Compass className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#00F0FF] animate-spin-slow shrink-0" />
+                    <span className="text-[9px] sm:text-[10px] font-mono tracking-[0.15em] sm:tracking-[0.3em] text-[#00F0FF] uppercase font-bold truncate">
+                      TAMIL NADU & KARNATAKA
                     </span>
                   </div>
-                  <span className="px-2.5 py-1 bg-[#00F0FF]/15 border border-[#00F0FF]/40 text-[9px] font-mono text-[#00F0FF] uppercase font-bold rounded-sm">
-                    8 ACTIVE REGIONAL HUBS
+                  <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 bg-[#00F0FF]/15 border border-[#00F0FF]/40 text-[8px] sm:text-[9px] font-mono text-[#00F0FF] uppercase font-bold rounded-sm whitespace-nowrap shrink-0">
+                    8 REGIONAL HUBS
                   </span>
                 </div>
 
@@ -153,30 +153,30 @@ export const WorkingLocations: React.FC = () => {
                         onClick={() => setActiveLocation(idx)}
                         style={{ left: `${loc.coords.x}%`, top: `${loc.coords.y}%` }}
                         className={`absolute -translate-x-1/2 -translate-y-1/2 group transition-all duration-300 z-20 ${
-                          isSelected ? "scale-125 z-30" : "hover:scale-110"
+                          isSelected ? "scale-110 sm:scale-125 z-30" : "hover:scale-105"
                         }`}
                       >
                         <div className="relative flex items-center justify-center">
                           <span
-                            className={`absolute w-8 h-8 rounded-full transition-all ${
+                            className={`absolute w-6 sm:w-8 h-6 sm:h-8 rounded-full transition-all ${
                               isSelected ? "bg-[#00F0FF]/30 animate-ping" : "bg-[#00F0FF]/10"
                             }`}
                           />
                           <div
-                            className={`w-5 h-5 rounded-full flex items-center justify-center border transition-all ${
+                            className={`w-4 sm:w-5 h-4 sm:h-5 rounded-full flex items-center justify-center border transition-all ${
                               isSelected
                                 ? "bg-[#00F0FF] border-white text-[#080C15] shadow-cyan-glow"
                                 : "bg-[#0D1424] border-[#00F0FF]/60 text-[#00F0FF]"
                             }`}
                           >
-                            <MapPin className="w-3 h-3" />
+                            <MapPin className="w-2.5 sm:w-3 h-2.5 sm:h-3" />
                           </div>
                         </div>
                         <span
-                          className={`mt-1.5 px-2 py-0.5 rounded text-[9px] font-mono tracking-widest uppercase font-bold whitespace-nowrap block border transition-all ${
+                          className={`mt-1 px-1.5 sm:px-2 py-0.5 rounded text-[8px] sm:text-[9px] font-mono tracking-wider sm:tracking-widest uppercase font-bold whitespace-nowrap block border transition-all ${
                             isSelected
                               ? "bg-[#00F0FF] text-[#080C15] border-[#00F0FF] shadow-cyan-glow"
-                              : "bg-[#080C15]/90 text-[#F8FAFC]/80 border-[#00F0FF]/30 group-hover:text-[#00F0FF]"
+                              : "bg-[#080C15]/95 text-[#F8FAFC]/80 border-[#00F0FF]/30 group-hover:text-[#00F0FF]"
                           }`}
                         >
                           {loc.name}
@@ -187,19 +187,19 @@ export const WorkingLocations: React.FC = () => {
                 </div>
 
                 {/* Bottom Map Status Legend */}
-                <div className="flex items-center justify-between z-10 pt-4 border-t border-[#00F0FF]/20 text-[10px] font-mono text-[#00F0FF]/70">
-                  <div className="flex items-center space-x-2">
-                    <span className="w-2 h-2 rounded-full bg-[#00F0FF] animate-pulse" />
-                    <span>CLICK ANY NODE TO INSPECT REGION</span>
+                <div className="flex items-center justify-between z-10 pt-3 border-t border-[#00F0FF]/20 text-[9px] sm:text-[10px] font-mono text-[#00F0FF]/70">
+                  <div className="flex items-center space-x-1.5">
+                    <span className="w-2 h-2 rounded-full bg-[#00F0FF] animate-pulse shrink-0" />
+                    <span className="truncate">TAP NODE TO INSPECT</span>
                   </div>
-                  <span>TAMIL NADU & KARNATAKA</span>
+                  <span className="hidden xs:inline">REGIONAL HUB</span>
                 </div>
               </div>
             </BeveledCard>
           </div>
 
           {/* Right Column: Interactive Regional Hub Cards List */}
-          <div className="lg:col-span-6 space-y-3.5 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
+          <div className="lg:col-span-6 space-y-3 max-h-[460px] sm:max-h-[500px] overflow-y-auto pr-1 custom-scrollbar">
             {locations.map((loc, idx) => {
               const isSelected = activeLocation === idx;
 
@@ -207,34 +207,34 @@ export const WorkingLocations: React.FC = () => {
                 <BeveledCard key={loc.id} variant={isSelected ? "cyan" : "glass"}>
                   <div
                     onClick={() => setActiveLocation(idx)}
-                    className={`p-5 rounded-xl cursor-pointer transition-all duration-300 flex items-center justify-between ${
+                    className={`p-4 sm:p-5 rounded-xl cursor-pointer transition-all duration-300 flex items-center justify-between ${
                       isSelected
                         ? "bg-[#00F0FF]/15 border-l-4 border-l-[#00F0FF]"
                         : "hover:bg-[#00F0FF]/5"
                     }`}
                   >
-                    <div className="flex items-start space-x-4">
+                    <div className="flex items-start space-x-3 sm:space-x-4 min-w-0">
                       <div
-                        className={`p-3 rounded-lg mt-0.5 transition-colors ${
+                        className={`p-2.5 sm:p-3 rounded-lg mt-0.5 transition-colors shrink-0 ${
                           isSelected
                             ? "bg-[#00F0FF] text-[#080C15] shadow-cyan-glow"
                             : "bg-[#00F0FF]/10 text-[#00F0FF] border border-[#00F0FF]/30"
                         }`}
                       >
-                        <Building className="w-5 h-5" />
+                        <Building className="w-4 h-4 sm:w-5 sm:h-5" />
                       </div>
 
-                      <div>
-                        <div className="flex items-center space-x-3 mb-1">
-                          <h3 className="font-serif text-lg sm:text-xl font-medium text-white tracking-wider uppercase">
+                      <div className="min-w-0">
+                        <div className="flex items-center space-x-2 sm:space-x-3 mb-1 flex-wrap gap-y-1">
+                          <h3 className="font-serif text-base sm:text-xl font-medium text-white tracking-wider uppercase truncate">
                             {loc.name}
                           </h3>
-                          <span className="px-2 py-0.5 bg-[#00F0FF]/15 border border-[#00F0FF]/30 text-[9px] font-mono text-[#00F0FF] uppercase font-bold rounded-sm">
+                          <span className="px-2 py-0.5 bg-[#00F0FF]/15 border border-[#00F0FF]/30 text-[8px] sm:text-[9px] font-mono text-[#00F0FF] uppercase font-bold rounded-sm">
                             {loc.type}
                           </span>
                         </div>
 
-                        <span className="text-[10px] font-mono tracking-widest text-[#00F0FF] uppercase block font-bold mb-1">
+                        <span className="text-[9px] sm:text-[10px] font-mono tracking-wider text-[#00F0FF] uppercase block font-bold mb-1 truncate">
                           {loc.tag} • {loc.state}
                         </span>
 
@@ -248,7 +248,7 @@ export const WorkingLocations: React.FC = () => {
                       href={whatsappUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2.5 rounded-full bg-[#00F0FF]/10 hover:bg-[#00F0FF] text-[#00F0FF] hover:text-[#080C15] transition-colors shrink-0 ml-3"
+                      className="p-2 sm:p-2.5 rounded-full bg-[#00F0FF]/10 hover:bg-[#00F0FF] text-[#00F0FF] hover:text-[#080C15] transition-colors shrink-0 ml-2 sm:ml-3"
                       title={`Inquire about properties in ${loc.name}`}
                     >
                       <ArrowUpRight className="w-4 h-4" />
