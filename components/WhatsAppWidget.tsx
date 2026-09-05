@@ -2,15 +2,16 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook, Youtube } from "lucide-react";
 
 export const WhatsAppWidget: React.FC = () => {
-  const [hoveredWidget, setHoveredWidget] = useState<"whatsapp" | "instagram" | "facebook" | null>(null);
+  const [hoveredWidget, setHoveredWidget] = useState<"whatsapp" | "instagram" | "facebook" | "youtube" | null>(null);
 
   const whatsappNumber = "918667841110";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Hello%20IAS%20Real%20Estate%20%26%20Builders%2C%20I%20am%20interested%20in%20your%20property%20services.`;
   const instagramUrl = "https://www.instagram.com/ias_realestate?igsi=ajMzajd3dzloNzR0";
   const facebookUrl = "https://www.facebook.com/p/IAS-Real-estate-Builders-61582430488508/";
+  const youtubeUrl = "http://www.youtube.com/@IASEALESTATE";
 
   return (
     <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 md:bottom-8 md:right-8 z-50 flex flex-col items-end space-y-2.5 sm:space-y-3">
@@ -29,6 +30,8 @@ export const WhatsAppWidget: React.FC = () => {
                 ? "DIRECT WHATSAPP"
                 : hoveredWidget === "facebook"
                 ? "OFFICIAL FACEBOOK"
+                : hoveredWidget === "youtube"
+                ? "OFFICIAL YOUTUBE"
                 : "OFFICIAL INSTAGRAM"}
             </span>
             <span className="text-xs font-sans font-medium text-white">
@@ -36,6 +39,8 @@ export const WhatsAppWidget: React.FC = () => {
                 ? "+91 8667841110"
                 : hoveredWidget === "facebook"
                 ? "IAS Real estate Builders"
+                : hoveredWidget === "youtube"
+                ? "@IASEALESTATE"
                 : "@ias_realestate"}
             </span>
           </motion.div>
@@ -43,6 +48,25 @@ export const WhatsAppWidget: React.FC = () => {
       </AnimatePresence>
 
       <div className="flex items-center space-x-2 sm:space-x-3">
+        {/* YouTube Floating Action Button */}
+        <motion.a
+          href={youtubeUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onMouseEnter={() => setHoveredWidget("youtube")}
+          onMouseLeave={() => setHoveredWidget(null)}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          whileHover={{ scale: 1.08 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          className="relative group p-2.5 sm:p-3.5 md:p-4 bg-[#FF0000] hover:bg-[#cc0000] text-white rounded-full shadow-2xl flex items-center justify-center cursor-pointer border border-red-400/40 shrink-0"
+          aria-label="Subscribe to IAS Real Estate & Builders on YouTube"
+          data-cursor="YOUTUBE"
+        >
+          <Youtube className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white fill-current" />
+        </motion.a>
+
         {/* Facebook Floating Action Button */}
         <motion.a
           href={facebookUrl}

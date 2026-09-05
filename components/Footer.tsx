@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Phone, ArrowUp, MapPin, Instagram, Facebook } from "lucide-react";
+import { Phone, ArrowUp, MapPin, Instagram, Facebook, Youtube } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
 export const Footer: React.FC = () => {
@@ -17,6 +17,7 @@ export const Footer: React.FC = () => {
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${addressQuery}`;
   const instagramUrl = "https://www.instagram.com/ias_realestate?igsi=ajMzajd3dzloNzR0";
   const facebookUrl = "https://www.facebook.com/p/IAS-Real-estate-Builders-61582430488508/";
+  const youtubeUrl = "http://www.youtube.com/@IASEALESTATE";
 
   return (
     <footer className="relative w-full bg-[#050811] text-foreground border-t border-[#00F0FF]/15 pt-20 pb-12 overflow-hidden px-6 sm:px-12 md:px-20 lg:px-28">
@@ -120,6 +121,16 @@ export const Footer: React.FC = () => {
                     >
                       <Instagram className="w-3.5 h-3.5 text-current" />
                       <span>INSTAGRAM</span>
+                    </a>
+
+                    <a
+                      href={youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-2 px-4 py-2 bg-[#FF0000]/15 border border-[#FF0000]/40 hover:bg-[#FF0000] hover:text-white text-[#FF0000] transition-colors font-mono text-xs rounded-md"
+                    >
+                      <Youtube className="w-3.5 h-3.5 fill-current" />
+                      <span>YOUTUBE</span>
                     </a>
                   </div>
                 </div>
