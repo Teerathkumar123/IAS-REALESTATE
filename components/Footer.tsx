@@ -72,7 +72,7 @@ export const Footer: React.FC = () => {
                 {t("footer.directTag")}
               </span>
               <div className="space-y-4 text-xs font-sans text-[#F8FAFC]/80">
-                <div className="flex flex-col sm:flex-row sm:items-center gap-6">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-6 flex-wrap">
                   <div>
                     <span className="text-[9px] font-mono text-[#00F0FF]/50 block uppercase">{t("footer.p1")}</span>
                     <a href="tel:9600070025" className="hover:text-[#00F0FF] flex items-center space-x-2 font-semibold text-sm">
@@ -86,6 +86,14 @@ export const Footer: React.FC = () => {
                     <a href="tel:8667841110" className="hover:text-[#00F0FF] flex items-center space-x-2 font-semibold text-sm">
                       <Phone className="w-3.5 h-3.5 text-[#00F0FF]" />
                       <span>+91 8667841110</span>
+                    </a>
+                  </div>
+
+                  <div>
+                    <span className="text-[9px] font-mono text-[#00F0FF]/50 block uppercase">{t("footer.landline")}</span>
+                    <a href="tel:04174357180" className="hover:text-[#00F0FF] flex items-center space-x-2 font-semibold text-sm">
+                      <Phone className="w-3.5 h-3.5 text-[#00F0FF]" />
+                      <span>04174-357180</span>
                     </a>
                   </div>
                 </div>

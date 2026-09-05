@@ -83,6 +83,15 @@ export const WorkingLocations: React.FC = () => {
       type: "METRO CORRIDOR",
       coords: { x: 12, y: 80 },
     },
+    {
+      id: 9,
+      name: t("loc.alangayam"),
+      tag: t("loc.alangayamTag"),
+      state: "TAMIL NADU",
+      desc: "Prominent Tirupathur Regional Town. Strategic land promotion, DTCP approved layout developments, residential plots, and building construction.",
+      type: "REGIONAL HUB",
+      coords: { x: 42, y: 62 },
+    },
   ];
 
   const whatsappUrl = "https://wa.me/918667841110?text=Hello%20IAS%20Real%20Estate%20%26%20Builders%2C%20I%20am%20interested%20in%20properties%20in%20your%20working%20locations.";
@@ -128,7 +137,7 @@ export const WorkingLocations: React.FC = () => {
                     </span>
                   </div>
                   <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 bg-[#00F0FF]/15 border border-[#00F0FF]/40 text-[8px] sm:text-[9px] font-mono text-[#00F0FF] uppercase font-bold rounded-sm whitespace-nowrap shrink-0">
-                    8 REGIONAL HUBS
+                    9 REGIONAL HUBS
                   </span>
                 </div>
 
@@ -139,6 +148,7 @@ export const WorkingLocations: React.FC = () => {
                   <line x1="50%" y1="40%" x2="62%" y2="30%" stroke="#00F0FF" strokeWidth="1.5" strokeDasharray="4 4" />
                   <line x1="62%" y1="30%" x2="75%" y2="22%" stroke="#00F0FF" strokeWidth="1.5" strokeDasharray="4 4" />
                   <line x1="38%" y1="55%" x2="25%" y2="72%" stroke="#00F0FF" strokeWidth="1.5" strokeDasharray="4 4" />
+                  <line x1="38%" y1="55%" x2="42%" y2="62%" stroke="#00F0FF" strokeWidth="1.5" strokeDasharray="4 4" />
                   <line x1="25%" y1="72%" x2="18%" y2="65%" stroke="#00F0FF" strokeWidth="1.5" strokeDasharray="4 4" />
                   <line x1="18%" y1="65%" x2="12%" y2="80%" stroke="#00F0FF" strokeWidth="1.5" strokeDasharray="4 4" />
                 </svg>

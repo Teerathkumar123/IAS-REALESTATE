@@ -117,6 +117,28 @@ export const Contact: React.FC = () => {
                 <ArrowRight className="w-5 h-5 text-[#00F0FF] group-hover:translate-x-2 transition-all shrink-0" />
               </a>
             </BeveledCard>
+
+            <BeveledCard variant="glass">
+              <a
+                href="tel:04174357180"
+                className="group flex items-center justify-between block"
+              >
+                <div className="flex items-center space-x-5">
+                  <div className="p-3.5 sm:p-4 bg-[#00F0FF]/15 border border-[#00F0FF]/40 text-[#00F0FF] rounded-full group-hover:bg-[#00F0FF] group-hover:text-[#050811] transition-colors">
+                    <Phone className="w-5 h-5 sm:w-6 sm:h-6" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-mono tracking-[0.25em] text-[#00F0FF] uppercase block font-bold mb-1">
+                      {t("contact.landlineLabel")}
+                    </span>
+                    <span className="font-serif text-xl sm:text-2xl font-normal text-white tracking-wider">
+                      04174-357180
+                    </span>
+                  </div>
+                </div>
+                <ArrowRight className="w-5 h-5 text-[#00F0FF] group-hover:translate-x-2 transition-all shrink-0" />
+              </a>
+            </BeveledCard>
           </div>
         </div>
       </div>

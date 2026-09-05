@@ -166,6 +166,8 @@ const translations: Record<string, Record<Language, string>> = {
   "loc.krishnagiriTag": { en: "HIGHWAY REGIONAL JUNCTION", ta: "நெடுஞ்சாலை பிராந்திய சந்திப்பு" },
   "loc.banglore": { en: "BANGLORE", ta: "பெங்களூரு" },
   "loc.bangloreTag": { en: "METRO TECH CORRIDOR", ta: "மெட்ரோ தகவல் தொழில்நுட்ப மையம்" },
+  "loc.alangayam": { en: "ALANGAYAM", ta: "ஆலங்காயம்" },
+  "loc.alangayamTag": { en: "TIRUPATHUR REGIONAL TOWN", ta: "திருப்பத்தூர் மண்டல நகரம்" },
 
   // Why Choose IAS
   "why.tag": { en: "03 / WHY CHOOSE IAS", ta: "03 / ஏன் ஐஏஎஸ் ரியல் எஸ்டேட்" },
@@ -175,7 +177,7 @@ const translations: Record<string, Record<Language, string>> = {
   "why.p1Detail": { en: "Zero ambiguity in documentation, clear titles, and honest guidance from initial inquiry to final handover.", ta: "ஆவணங்களில் சந்தேகத்திற்கு இடமில்லை, தெளிவான பட்டா மற்றும் ஆரம்ப விசாரணை முதல் இறுதி பதிவு வரை நேர்மையான வழிகாட்டுதல்." },
   "why.p2Title": { en: "QUALITY", ta: "தரம்" },
   "why.p2Tag": { en: "PROFESSIONAL STANDARDS.", ta: "தொழில்முறை தரநிலைகள்." },
-  "why.p2Detail": { en: "Architectural precision, structural durability, and meticulous site planning in every land layout and construction.", ta: "துல்லியமான மனை வடிவமைப்பு, கட்டமைப்பு ஆயுள் மற்றும் ஒவ்வொரு நில மனை மற்றும் கட்டுமானத்திலும் சிறந்த திட்டமிடல்." },
+  "why.p2Detail": { en: "Architectural precision, structural durability, and meticulous site planning in every land layout and construction.", ta: "துல்லியமான மனை வடிவமைப்பு, கட்டமைப்பு ஆயுள் மற்றும் ஒவ்வொரு நில மனை மற்றும் строительстваிலும் சிறந்த திட்டமிடல்." },
   "why.p3Title": { en: "VISION", ta: "தொலைநோக்கு" },
   "why.p3Tag": { en: "LONG-TERM THINKING.", ta: "நீண்டகால சிந்தைனை." },
   "why.p3Detail": { en: "Strategic land identification along high-growth corridors engineered for long-term community value.", ta: "வேகமாக வளர்ச்சி அடையும் பகுதிகளில் நீண்டகால சமூக பயன்பாட்டிற்காக தேர்வு செய்யப்படும் நிலங்கள்." },
@@ -241,6 +243,7 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "contact.phone1Label": { en: "PRIMARY PHONE LINE", ta: "முதன்மை தொலைபேசி எண்" },
   "contact.phone2Label": { en: "SECONDARY PHONE LINE", ta: "இரண்டாம் தொலைபேசி எண்" },
+  "contact.landlineLabel": { en: "OFFICE LANDLINE LINE", ta: "நிலையான தொலைபேசி எண்" },
 
   // Footer Section
   "footer.subtag": { en: "LAND • DEVELOPMENT • BUILDERS", ta: "நிலம் • வளர்ச்சி • பில்டர்ஸ்" },
@@ -252,6 +255,7 @@ const translations: Record<string, Record<Language, string>> = {
   "footer.directTag": { en: "DIRECT INQUIRIES & SOCIALS", ta: "நேரடி விசாரணைகள் & சமூக ஊடகங்கள்" },
   "footer.p1": { en: "PHONE LINE 1", ta: "தொலைபேசி எண் 1" },
   "footer.p2": { en: "PHONE LINE 2", ta: "தொலைபேசி எண் 2" },
+  "footer.landline": { en: "OFFICE LANDLINE", ta: "நிலையான தொலைபேசி" },
   "footer.insta": { en: "OFFICIAL INSTAGRAM", ta: "அதிகாரப்பூர்வ இன்ஸ்டாகிராம்" },
   "footer.servicesLabel": { en: "SERVICES COVERED", ta: "வழங்கப்படும் சேவைகள்" },
   "footer.servicesText": {
