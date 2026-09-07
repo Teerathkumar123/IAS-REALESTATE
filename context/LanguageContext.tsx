@@ -238,8 +238,8 @@ const translations: Record<string, Record<Language, string>> = {
   "contact.builderExcellence": { en: "BUILDER EXCELLENCE", ta: "கட்டுமான சிறப்பு" },
   "contact.officeLabel": { en: "HEAD OFFICE ADDRESS", ta: "தலைமை அலுவலக முகவரி" },
   "contact.officeAddr": {
-    en: "No 80, Madha Complex, Opposite, Noorullapet, Cn Anadurai Road, Govindapuram, Vaniyambadi-635751, Tamil Nadu",
-    ta: "எண் 80, மாதா காம்ப்ளக்ஸ், எதிரில், நூருல்லாபேட்டை, சி.என். அண்ணாதுரை சாலை, கோவிந்தபுரம், வாணியம்பாடி-635751, தமிழ்நாடு",
+    en: "No 80, Madha Complex, Opposite, Noorullapet, Cn Anadurai Road, Govindapuram, Vaniyambadi-635751, Tirupathur District, Tamil Nadu",
+    ta: "எண் 80, மாதா காம்ப்ளக்ஸ், எதிரில், நூருல்லாபேட்டை, சி.என். அண்ணாதுரை சாலை, கோவிந்தபுரம், வாணியம்பாடி-635751, திருப்பத்தூர் மாவட்டம், தமிழ்நாடு",
   },
   "contact.phone1Label": { en: "PRIMARY PHONE LINE", ta: "முதன்மை தொலைபேசி எண்" },
   "contact.phone2Label": { en: "SECONDARY PHONE LINE", ta: "இரண்டாம் தொலைபேசி எண்" },

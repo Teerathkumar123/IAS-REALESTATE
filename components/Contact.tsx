@@ -9,7 +9,7 @@ export const Contact: React.FC = () => {
   const { t } = useLanguage();
 
   const addressQuery = encodeURIComponent(
-    "No 80, Madha Complex, Opposite, Noorullapet, Cn Anadurai Road, Govindapuram, Vaniyambadi-635751, Tamil Nadu"
+    "No 80, Madha Complex, Opposite, Noorullapet, Cn Anadurai Road, Govindapuram, Vaniyambadi-635751, Tirupathur District, Tamil Nadu"
   );
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${addressQuery}`;
 
