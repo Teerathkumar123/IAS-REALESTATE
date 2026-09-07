@@ -145,7 +145,7 @@ export const translations = {
     addressTitle: "HEAD OFFICE ADDRESS",
     addressLine1: "No 80, Madha Complex, Opposite, Noorullapet,",
     addressLine2: "Cn Anadurai Road, Govindapuram,",
-    addressLine3: "Vaniyambadi-635751, Tamil Nadu",
+    addressLine3: "Vaniyambadi-635751, Tirupathur District, Tamil Nadu",
     phone1Title: "PRIMARY PHONE LINE",
     phone2Title: "SECONDARY PHONE LINE",
     
@@ -304,7 +304,7 @@ export const translations = {
     addressTitle: "தலைமை அலுவலக முகவரி",
     addressLine1: "எண் 80, மாதா காம்ப்ளக்ஸ், நூருல்லாபேட்டை எதிரில்,",
     addressLine2: "சி.என். அண்ணாதுரை சாலை, கோவிந்தபுரம்,",
-    addressLine3: "வாணியம்பாடி-635751, தமிழ்நாடு",
+    addressLine3: "வாணியம்பாடி-635751, திருப்பத்தூர் மாவட்டம், தமிழ்நாடு",
     phone1Title: "முதன்மை தொலைபேசி எண்",
     phone2Title: "இரண்டாம் தொலைபேசி எண்",
     
